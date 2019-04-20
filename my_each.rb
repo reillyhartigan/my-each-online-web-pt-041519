@@ -1,5 +1,3 @@
-array = [1, 2, 3]
-
 def my_each(array)
   if block_given?
     i = 0
@@ -12,4 +10,9 @@ def my_each(array)
   else
     puts "Hey! Ny Block was given!"
   end
+end
+
+collection = [1, 2, 3, 4]
+my_each(collection) do |i|
+  puts i
 end
